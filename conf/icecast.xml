@@ -1,0 +1,47 @@
+<icecast>
+	<limits>
+		<sources>1</sources>
+		<workers>1</workers>
+	</limits>
+	<authentication>
+		<source-password>test</source-password>
+		<relay-password>test</relay-password>
+		<admin-user>admin</admin-user>
+		<admin-password>admin</admin-password>
+	</authentication>
+	<directory>
+		<yp-url-timeout>15</yp-url-timeout>
+		<yp-url>http://dir.xiph.org/cgi-bin/yp-cgi</yp-url>
+	</directory>
+	<hostname>0.0.0.0</hostname>
+	<listen-socket>
+		<port>8888</port>
+	</listen-socket>
+	<fileserve>1</fileserve>
+
+	
+
+	
+
+	<paths>
+		<basedir>/content</basedir>
+		<logdir>/log</logdir>
+		<webroot>/web</webroot>
+		<adminroot>/admin</adminroot>
+		<pidfile>icecast.pid</pidfile>
+		<alias source="/" dest="/index.html"/>
+	</paths>
+	<logging>
+		<accesslog>icecast.access.log</accesslog>
+		<errorlog>icecast.error.log</errorlog>
+		<playlistlog>icecast.playlist.log</playlistlog>
+		<loglevel>3</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+	</logging>
+	<security>
+		<chroot>0</chroot>
+		<changeowner>  
+			<user>nobody</user>  
+			<group>nogroup</group>  
+		</changeowner>
+	</security>
+</icecast>

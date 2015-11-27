@@ -1,0 +1,9 @@
+/log/icecast.playlist.log
+/log/ices.log
+/log/icecast.error.log
+/log/icecast.access.log
+/conf/.icecast.xml.swp
+/content/supervisord.log
+/content/icecast.pid
+/content/ices.pid
+/content/supervisord.pid
